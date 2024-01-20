@@ -42,11 +42,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &kp LC(LS(TAB))     &kp LC(TAB)             &trans                   &trans               &trans    &kp DELETE
-&kp F1       &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                            &kp LS(LEFT_ARROW)  &kp LC(LS(LEFT_ARROW))  &kp LC(LS(RIGHT_ARROW))  &kp LS(RIGHT_ARROW)  &kp F11   &kp F12
-&kp GRAVE    &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                         &kp CARET           &kp AMPS                &kp KP_MULTIPLY          &kp LPAR             &kp RPAR  &kp TILDE
-&kp LA(TAB)  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)     &trans    &kp LBKT  &kp UNDERSCORE      &kp MINUS               &kp KP_PLUS              &kp LBRC             &kp RBRC  &kp PIPE
-                                         &trans        &trans        &trans        &trans    &trans    &kp LEFT_CONTROL    &kp LEFT_ALT            &kp LEFT_SHIFT
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &kp LC(LS(TAB))     &kp LC(TAB)             &trans                   &trans               &trans    &kp DELETE
+&kp F1       &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                             &kp LS(LEFT_ARROW)  &kp LC(LS(LEFT_ARROW))  &kp LC(LS(RIGHT_ARROW))  &kp LS(RIGHT_ARROW)  &kp F11   &kp F12
+&kp GRAVE    &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                          &kp CARET           &kp AMPS                &kp KP_MULTIPLY          &kp LPAR             &kp RPAR  &kp TILDE
+&kp LA(TAB)  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(LS(Z))  &trans    &kp LBKT  &kp UNDERSCORE      &kp MINUS               &kp KP_PLUS              &kp LBRC             &kp RBRC  &kp PIPE
+                                         &trans        &trans        &trans         &trans    &trans    &kp LEFT_CONTROL    &kp LEFT_ALT            &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
