@@ -42,11 +42,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp DELETE     &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR                                    &trans              &trans                  &trans                   &trans               &trans    &kp DELETE
-&kp GRAVE      &kp LS(RETURN)  &kp LC(LS(TAB))  &kp LC(TAB)    &kt DOLLAR     &kp LC(T)                                     &kp LS(LEFT_ARROW)  &kp LC(LS(LEFT_ARROW))  &kp LC(LS(RIGHT_ARROW))  &kp LS(RIGHT_ARROW)  &trans    &trans
-&kp LC(LS(L))  &kp EXCL        &kp AT           &kp HASH       &kp LC(F)      &kp PRCNT                                     &kp CARET           &kp AMPS                &kp KP_MULTIPLY          &kp LPAR             &kp RPAR  &kp TILDE
-&kp BSPC       &kp LC(Z)       &kp LC(X)        &kp LC(C)      &kp LC(V)      &kp LS(ENTER)  &kp ENTER            &kp LBKT  &kp UNDERSCORE      &kp MINUS               &kp KP_PLUS              &kp LBRC             &kp RBRC  &kp PIPE
-                                                &kp LC(LS(C))  &kp LC(LS(V))  &trans         &kp LC(LS(GRAVE))    &trans    &kp RIGHT_CONTROL   &kp RIGHT_SHIFT         &kp RIGHT_ALT
+&kp DELETE     &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR                                 &trans              &trans                  &trans                   &trans               &trans    &kp DELETE
+&kp GRAVE      &kp LS(RETURN)  &kp LC(LS(TAB))  &kp LC(TAB)    &kt DOLLAR     &kp PRCNT                                  &kp LS(LEFT_ARROW)  &kp LC(LS(LEFT_ARROW))  &kp LC(LS(RIGHT_ARROW))  &kp LS(RIGHT_ARROW)  &trans    &trans
+&kp LC(LS(L))  &kp EXCL        &kp AT           &kp HASH       &kp LC(F)      &kp ENTER                                  &kp CARET           &kp AMPS                &kp KP_MULTIPLY          &kp LPAR             &kp RPAR  &kp TILDE
+&kp BSPC       &kp LC(Z)       &kp LC(X)        &kp LC(C)      &kp LC(V)      &trans      &kp LS(ENTER)        &kp LBKT  &kp UNDERSCORE      &kp MINUS               &kp KP_PLUS              &kp LBRC             &kp RBRC  &kp PIPE
+                                                &kp LC(LS(C))  &kp LC(LS(V))  &trans      &kp LC(LS(GRAVE))    &trans    &kp RIGHT_CONTROL   &kp RIGHT_SHIFT         &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
