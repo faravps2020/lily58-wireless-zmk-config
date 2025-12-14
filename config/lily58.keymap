@@ -42,11 +42,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp DELETE     &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR                                 &trans              &trans                  &trans                   &trans               &trans    &kp DELETE
-&kp GRAVE      &trans        &kp LC(LS(TAB))  &kp LC(TAB)    &kt DOLLAR     &kp PRCNT                                  &kp LS(LEFT_ARROW)  &kp LC(LS(LEFT_ARROW))  &kp LC(LS(RIGHT_ARROW))  &kp LS(RIGHT_ARROW)  &trans    &trans
-&kp LC(LS(L))  &kp EXCL      &kp AT           &kp HASH       &kp LC(F)      &kp ENTER                                  &kp CARET           &kp AMPS                &kp KP_MULTIPLY          &kp LPAR             &kp RPAR  &kp TILDE
-&kp BSPC       &kp LC(Z)     &kp LC(X)        &kp LC(C)      &kp LC(V)      &trans      &kp LS(ENTER)        &kp LBKT  &kp UNDERSCORE      &kp MINUS               &kp KP_PLUS              &kp LBRC             &kp RBRC  &kp PIPE
-                                              &kp LC(LS(C))  &kp LC(LS(V))  &trans      &kp LC(LS(GRAVE))    &trans    &kp RIGHT_CONTROL   &kp RIGHT_SHIFT         &kp RIGHT_ALT
+&kp DELETE     &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR                                 &trans              &trans                  &trans                   &trans               &trans    &kp DELETE
+&kp GRAVE      &trans        &kp LC(LS(TAB))  &kp LC(TAB)   &kt DOLLAR      &kp PRCNT                                  &kp LS(LEFT_ARROW)  &kp LC(LS(LEFT_ARROW))  &kp LC(LS(RIGHT_ARROW))  &kp LS(RIGHT_ARROW)  &trans    &trans
+&kp LC(LS(L))  &kp EXCL      &kp AT           &kp HASH      &kp LC(F)       &kp ENTER                                  &kp CARET           &kp AMPS                &kp KP_MULTIPLY          &kp LPAR             &kp RPAR  &kp TILDE
+&kp BSPC       &kp LC(Z)     &kp LC(X)        &kp LC(C)     &kp LC(V)       &trans      &kp LS(ENTER)        &kp LBKT  &kp UNDERSCORE      &kp MINUS               &kp KP_PLUS              &kp LBRC             &kp RBRC  &kp PIPE
+                                              &kp LCTRL     &kp LEFT_SHIFT  &trans      &kp LC(LS(GRAVE))    &trans    &kp RIGHT_CONTROL   &kp RIGHT_SHIFT         &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -62,26 +62,33 @@
 
             display-name = "Raise";
             bindings = <
-&trans     &trans  &trans  &trans            &trans          &trans                                  &kp C_VOL_DN  &kp C_VOL_UP   &kp RA(RIGHT_SHIFT)  &kp C_PLAY_PAUSE  &kp C_MUTE  &kp DELETE
-&kp GRAVE  &kp N1  &kp N2  &kp N3            &kp N4          &kp N5                                  &kp N6        &kp N7         &kp N8               &kp N9            &kp N0      &kp HOME
-&kp F1     &kp F2  &kp F3  &kp F4            &kp F5          &kp F6                                  &kp RET       &kp LEFT       &kp UP               &kp DOWN          &kp RIGHT   &kp END
-&kp F7     &kp F8  &kp F9  &kp F10           &kp F11         &kp F12       &trans     &kp LS(ENTER)  &kp KP_PLUS   &kp MINUS      &kp EQUAL            &kp LBKT          &kp RBKT    &kp BSLH
-                           &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp TAB    &trans         &trans        &kp RIGHT_ALT  &kp RIGHT_SHIFT
+&trans     &trans  &trans  &trans            &trans          &trans                                   &kp C_VOL_DN  &kp C_VOL_UP     &trans         &kp C_PLAY_PAUSE  &kp C_MUTE  &kp DELETE
+&kp GRAVE  &kp N1  &kp N2  &kp N3            &kp N4          &kp N5                                   &kp LBRC      &kp RBRC         &kp UP         &kp LPAR          &kp RPAR    &kp HOME
+&kp F1     &kp F2  &kp F3  &kp F4            &kp F5          &kp F6                                   &kp RET       &kp LEFT         &kp DOWN       &kp RIGHT         &trans      &kp END
+&kp F7     &kp F8  &kp F9  &kp F10           &kp F11         &kp F12       &kp CAPS    &kp LS(ENTER)  &kp KP_PLUS   &kp MINUS        &kp EQUAL      &kp LBKT          &kp RBKT    &kp BSLH
+                           &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp TAB     &trans         &trans        &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        extra_1 {
-            status = "reserved";
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp N0  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
+    };
 
-        extra_2 {
-            status = "reserved";
-        };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
 
-        extra_3 {
-            status = "reserved";
+        ActivateLayer3 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
