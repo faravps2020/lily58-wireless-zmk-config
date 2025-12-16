@@ -54,7 +54,7 @@
 &kp DELETE     &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_CLR                                 &trans             &trans           &trans           &trans    &trans    &kp DELETE
 &kp LA(TAB)    &trans        &kp LC(LS(TAB))  &kp LC(TAB)   &kt DOLLAR      &kp PRCNT                                  &trans             &trans           &trans           &trans    &trans    &kp GRAVE
 &kp LC(LS(L))  &kp EXCL      &kp AT           &kp HASH      &kp LC(F)       &kp ENTER                                  &kp CARET          &kp AMPS         &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&kp GRAVE      &kp LC(Z)     &kp LC(X)        &kp LC(C)     &kp LC(V)       &trans      &kp LS(ENTER)        &kp LBKT  &kp UNDERSCORE     &kp MINUS        &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+&kp GRAVE      &kp LC(Z)     &kp LC(X)        &kp LC(C)     &kp LC(V)       &kp UNDER   &kp LS(ENTER)        &kp LBKT  &kp UNDERSCORE     &kp MINUS        &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
                                               &kp LCTRL     &kp LEFT_SHIFT  &trans      &kp LC(LS(GRAVE))    &trans    &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
 
@@ -83,11 +83,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans       &trans  &trans  &trans  &trans  &to 0
-&trans  &trans  &trans  &trans  &trans  &trans                     &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                     &kp MINUS    &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp RET  &kp KP_PLUS  &kp N1  &kp N2  &kp N3  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans   &trans       &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &kp KP_MULTIPLY  &trans  &trans  &trans  &trans  &to 0
+&trans  &trans  &trans  &trans  &trans  &trans                     &kp EQUAL        &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &kp MINUS        &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp RET  &kp KP_PLUS      &kp N1  &kp N2  &kp N3  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans   &trans           &kp N0  &trans
             >;
         };
     };
