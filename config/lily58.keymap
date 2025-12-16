@@ -83,11 +83,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp N0  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans       &trans  &trans  &trans  &trans  &to 0
+&trans  &trans  &trans  &trans  &trans  &trans                     &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &kp MINUS    &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp RET  &kp KP_PLUS  &kp N1  &kp N2  &kp N3  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans   &trans       &kp N0  &trans
             >;
         };
     };
